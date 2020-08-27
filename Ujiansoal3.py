@@ -1,0 +1,16 @@
+def urai(teks):                     # buat nama function dan parameter
+    new = []                        # siapkan variable list kosong
+    for i in range(1,len(teks)+1):  # loop i dimulai dari 1, sampai panjang kararakter teks +1 (+1 karena dimulai dari 1)
+        new.append(teks[:i])        # lalu teks akan di append menggunakan slicing :i dimana slicing akan di mulai dari awal sampe i
+                                    # setiap loop jalan i akan tambah 1 indexnya.
+        z = "".join(new)            # setelah selesai loop lalu join
+    return z
+
+
+print(urai('Code'))
+print(urai('Python'))
+print(urai('Purwadhika'))
+# output
+# CCoCodCode
+# PPyPytPythPythoPython
+# PPuPurPurwPurwaPurwadPurwadhPurwadhiPurwadhikPurwadhika
